@@ -1,0 +1,1207 @@
+
+/* CSS */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(189, 157, 135);
+  color: white;
+  font-family: "Lucida Handwriting", Times, cursive;
+
+ 
+}
+.signup
+{
+  margin-left: 120px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color:rgb(189, 157, 135);
+  padding: 10px;
+  font-family: "Lucida Handwriting", Times, cursive;
+  
+}
+
+nav a {
+  color: white;
+  margin: 0 50px;
+  text-decoration: none;
+  transition: color 3s ease-in-out;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+  opacity: 1.0;
+  transform: rotateY(20px);
+
+ 
+}
+
+section:nth-child(even) {
+  background-color:rgb(175, 152, 135);
+}
+
+.section-heading {
+  margin-bottom: 90px;
+  transition: color 0.3s ease-in-out;
+}
+
+section.visible {
+  opacity: 1.0;
+  
+}
+
+img {
+  max-width: 40%;
+  height: 30ch;
+  opacity: 1.0;
+  transition: opacity ;
+  border-radius: 200px;
+  position: relative;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  justify-content: space-between;
+}
+
+
+img:hover {
+  opacity: 1.0;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(137, 104, 81);
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.proud-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
+  background-color: white;
+  font-size: larger;
+  font-family: 'Lucida Sans', "Lucida Handwriting", Times, cursive, Geneva, Verdana, sans-serif;
+  position: relative;
+  
+}
+
+.proud-text {
+  max-width: 80%;
+}
+.works-section {
+  background-image: url("https://www.stewalkerphotography.com/wp-content/uploads/2023/03/black-and-white-wedding-photos23.jpg");
+  background-position: left top;
+  padding: 100%;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  font-family: var(--heading-font-font-family);
+  font-style: var(--heading-font-font-style);
+  font-weight: 100 !important;
+  font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem);
+  
+}
+
+.proud-section {
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://junebugweddings.com/gallery/Natasha%20Du%20Preez%20Photography/natasha-du-preez-photography-junebug-weddings-627.jpg');
+  background-size: cover;
+  filter: blur(3px); /* Apply blur effect */
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.works-section {
+  display: flex;
+  align-items: center;
+  padding: 200px;
+  
+}
+
+.works-section img {
+  flex: 1;
+  max-width: 50%;
+  
+}
+
+.text-block {
+  flex: 1;
+  padding: 20px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 20%;
+  border-style: ridge;
+
+ 
+  
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+.scrolling-text {
+  width: 100%;
+  padding: 20px 0;
+  transform: translateY(2.6px);
+  font-family:'Courier New', Courier, monospace;
+}
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #ccc; /* Example border styling */
+  padding: 10px;
+}
+
+.scrolling-text marquee {
+  font-size: 40px; /* Adjust the font size as needed */
+  
+}
+
+@keyframes textChange {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.changing-text {
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 1s ease; /* Apply a transition effect */
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: larger;
+  color: black;
+}
+
+.fade-in {
+  opacity: 5; /* Make the text visible */
+}
+.image-container-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-item-horizontal {
+  text-align: center;
+}
+
+.image-item-horizontal img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features-section .image-container-horizontal img {
+  width: 700px; 
+
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: cover;
+}
+
+@keyframes morph {
+  0% { letter-spacing: normal; }
+  50% { letter-spacing: 15px; }
+  100% { letter-spacing: normal; }
+}
+
+.text-block p1 {
+  animation: morph 20s infinite; 
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.text-block p1 {
+  background-color: black; /* Specify your desired background color */
+  padding: 5px; /* Adjust padding as needed */
+}
+
+.why-section {
+  position: relative;
+  padding: 100px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/56dec7d9b654f9dacda13531/1564577007121-WF5BMDERMKH1LX8CV4OJ/speeches+babington+house');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.wrapper {
+    width: 420px;
+    background:rgb(186, 150, 124) ;
+    border:2px solid rgba(1, 1, 1, 0.2);
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .2);
+    color: #0b0404;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+
+}
+.side-image {
+  max-width: 80%;
+  height: 100%;
+  top: 0%;
+  left: 30px;
+  size:200px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    
+}
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(219, 210, 194);
+    border-radius: 40px;
+    font-size: 16px;
+    color:  #030303;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #040404;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color:  #bba48d;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color:  #050505;
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: #bba48d;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #010101;
+    font-weight: 600;
+}
+.wrapper .register-link{
+   text-align: center;
+    font-size: 14.5px;
+    margin:20px 0 15px;
+}
+.register-link p a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+/*sdebar*/
+.sidebar {
+width: 250px;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgb(31, 30, 30); /* Light gray sidebar background color */
+color: #ffffff; /* White text color */
+box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the sidebar */
+display: flex; /* Make the sidebar a flex container */
+flex-direction: column; /* Stack the items vertically */
+}
+
+
+.admin-login-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+}
+
+.admin-login-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 300px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+label {
+margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 3px;
+font-size: 16px;
+}
+
+button {
+padding: 10px 20px;
+background-color: #c5bcb1;
+color: #fff;
+border: none;
+border-radius: 10%;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #e6d1ac;
+}
+.admin-dashboard-container {
+display: flex;
+}
+
+.sidebar {
+width: 200px;
+background-color: #333333;
+color: white;
+padding: 20px;
+}
+
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+}
+
+.sidebar li {
+padding: 10px 0;
+cursor: pointer;
+}
+
+.main-content {
+flex: 1;
+padding: 20px;
+}
+
+.charts-container {
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+}
+
+.bar-chart,
+.line-chart {
+width: 50%;
+padding: 150px;
+}
+
+h2 {
+text-align: center;
+}
+
+h3 {
+text-align: center;
+}
+p1 {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(255, 255, 255);
+font-size: large;
+}
+
+.admin-dashboard-container {
+display: flex;
+
+}
+
+.admin-profile {
+background-color: #f0f0f0;
+padding: 20px;
+margin-right: 20px;
+border-radius: 5px;
+}
+
+.admin-profile h2 {
+margin-bottom: 10px;
+}
+
+.sidebar {
+width: 200px;
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.main-content {
+flex: 1;
+padding: 20px;
+}
+
+.sidebar-toggle {
+cursor: pointer;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+.charts-container {
+display: flex;
+}
+
+.bar-chart, .line-chart {
+flex: 1;
+margin-right: 20px;
+}
+
+.bar-chart h3, .line-chart h3 {
+margin-bottom: 10px;
+}
+
+.event-registration-table {
+margin-top: 20px;
+}
+
+.event-registration-table h2 {
+margin-bottom: 10px;
+}
+
+.event-registration-table table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.event-registration-table th,
+.event-registration-table td {
+padding: 8px;
+border: 1px solid #ddd;
+text-align: left;
+}
+
+.event-registration-table th {
+background-color: #f2f2f2;
+}
+
+.event-registration-table tbody tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+.event-registration-table tbody tr:hover {
+background-color: #ddd;
+}
+
+
+/* CSS */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(189, 157, 135);
+  color: white;
+  font-family: "Lucida Handwriting", Times, cursive;
+
+ 
+}
+.signup
+{
+  margin-left: 120px;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color:rgb(189, 157, 135);
+  padding: 10px;
+  font-family: "Lucida Handwriting", Times, cursive;
+  
+}
+
+nav a {
+  color: white;
+  margin: 0 50px;
+  text-decoration: none;
+  transition: color 3s ease-in-out;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+  opacity: 1.0;
+  transform: rotateY(20px);
+
+ 
+}
+
+section:nth-child(even) {
+  background-color:rgb(175, 152, 135);
+}
+
+.section-heading {
+  margin-bottom: 90px;
+  transition: color 0.3s ease-in-out;
+}
+
+section.visible {
+  opacity: 1.0;
+  
+}
+
+img {
+  max-width: 40%;
+  height: 30ch;
+  opacity: 1.0;
+  transition: opacity ;
+  border-radius: 200px;
+  position: relative;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+  justify-content: space-between;
+}
+
+
+img:hover {
+  opacity: 1.0;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: rgb(137, 104, 81);
+  color: #fff;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.proud-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
+  background-color: white;
+  font-size: larger;
+  font-family: 'Lucida Sans', "Lucida Handwriting", Times, cursive, Geneva, Verdana, sans-serif;
+  position: relative;
+  
+}
+
+.proud-text {
+  max-width: 80%;
+}
+.works-section {
+  background-image: url("https://www.stewalkerphotography.com/wp-content/uploads/2023/03/black-and-white-wedding-photos23.jpg");
+  background-position: left top;
+  padding: 100%;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  font-family: var(--heading-font-font-family);
+  font-style: var(--heading-font-font-style);
+  font-weight: 100 !important;
+  font-size: calc((var(--heading-3-size-value) - 1)* 1.2vw + 1rem);
+  
+}
+
+.proud-section {
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://junebugweddings.com/gallery/Natasha%20Du%20Preez%20Photography/natasha-du-preez-photography-junebug-weddings-627.jpg');
+  background-size: cover;
+  filter: blur(3px); /* Apply blur effect */
+ 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.works-section {
+  display: flex;
+  align-items: center;
+  padding: 200px;
+  
+}
+
+.works-section img {
+  flex: 1;
+  max-width: 50%;
+  
+}
+
+.text-block {
+  flex: 1;
+  padding: 20px;
+}
+
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 20%;
+  border-style: ridge;
+
+ 
+  
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
+
+.scrolling-text {
+  width: 100%;
+  padding: 20px 0;
+  transform: translateY(2.6px);
+  font-family:'Courier New', Courier, monospace;
+}
+
+.scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+  border: 2px solid #ccc; /* Example border styling */
+  padding: 10px;
+}
+
+.scrolling-text marquee {
+  font-size: 40px; /* Adjust the font size as needed */
+  
+}
+
+@keyframes textChange {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.changing-text {
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 1s ease; /* Apply a transition effect */
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: larger;
+  color: black;
+}
+
+.fade-in {
+  opacity: 5; /* Make the text visible */
+}
+.image-container-horizontal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-item-horizontal {
+  text-align: center;
+}
+
+.image-item-horizontal img {
+  max-width: 100%;
+  height: auto;
+}
+
+.features-section .image-container-horizontal img {
+  width: 700px; 
+
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: cover;
+}
+
+@keyframes morph {
+  0% { letter-spacing: normal; }
+  50% { letter-spacing: 15px; }
+  100% { letter-spacing: normal; }
+}
+
+.text-block p1 {
+  animation: morph 20s infinite; 
+  font-size: larger;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.text-block p1 {
+  background-color: black; /* Specify your desired background color */
+  padding: 5px; /* Adjust padding as needed */
+}
+
+.why-section {
+  position: relative;
+  padding: 100px;
+}
+
+.logo-container {
+  position: absolute;
+  top: 70px;
+  left: 300px;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/56dec7d9b654f9dacda13531/1564577007121-WF5BMDERMKH1LX8CV4OJ/speeches+babington+house');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.wrapper {
+    width: 420px;
+    background:rgb(186, 150, 124) ;
+    border:2px solid rgba(1, 1, 1, 0.2);
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .2);
+    color: #0b0404;
+    border-radius: 10px;
+    padding: 30px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+
+}
+.side-image {
+  max-width: 80%;
+  height: 100%;
+  top: 0%;
+  left: 30px;
+  size:200px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+    
+}
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(219, 210, 194);
+    border-radius: 40px;
+    font-size: 16px;
+    color:  #030303;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #040404;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color:  #bba48d;
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color:  #050505;
+    text-decoration: none;
+
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    background: #bba48d;
+    box-shadow: 0 0 10px rgba(0 , 0 , 0 , .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #010101;
+    font-weight: 600;
+}
+.wrapper .register-link{
+   text-align: center;
+    font-size: 14.5px;
+    margin:20px 0 15px;
+}
+.register-link p a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+/*sdebar*/
+.sidebar {
+width: 250px;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgb(31, 30, 30); /* Light gray sidebar background color */
+color: #ffffff; /* White text color */
+box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2); /* Add a shadow to the sidebar */
+display: flex; /* Make the sidebar a flex container */
+flex-direction: column; /* Stack the items vertically */
+}
+
+
+.admin-login-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+}
+
+.admin-login-form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 300px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+label {
+margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+width: 100%;
+padding: 8px;
+border: 1px solid #ccc;
+border-radius: 3px;
+font-size: 16px;
+}
+
+button {
+padding: 10px 20px;
+background-color: #c5bcb1;
+color: #fff;
+border: none;
+border-radius: 10%;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #e6d1ac;
+}
+.admin-dashboard-container {
+display: flex;
+}
+
+.sidebar {
+width: 200px;
+background-color: #333333;
+color: white;
+padding: 20px;
+}
+
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+}
+
+.sidebar li {
+padding: 10px 0;
+cursor: pointer;
+}
+
+.main-content {
+flex: 1;
+padding: 20px;
+}
+
+.charts-container {
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+}
+
+.bar-chart,
+.line-chart {
+width: 50%;
+padding: 150px;
+}
+
+h2 {
+text-align: center;
+}
+
+h3 {
+text-align: center;
+}
+p1 {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: rgb(255, 255, 255);
+font-size: large;
+}
+
+.admin-dashboard-container {
+display: flex;
+
+}
+
+.admin-profile {
+background-color: #f0f0f0;
+padding: 20px;
+margin-right: 20px;
+border-radius: 5px;
+}
+
+.admin-profile h2 {
+margin-bottom: 10px;
+}
+
+.sidebar {
+width: 200px;
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.main-content {
+flex: 1;
+padding: 20px;
+}
+
+.sidebar-toggle {
+cursor: pointer;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+.charts-container {
+display: flex;
+}
+
+.bar-chart, .line-chart {
+flex: 1;
+margin-right: 20px;
+}
+
+.bar-chart h3, .line-chart h3 {
+margin-bottom: 10px;
+}
+
+.event-registration-table {
+margin-top: 20px;
+}
+
+.event-registration-table h2 {
+margin-bottom: 10px;
+}
+
+.event-registration-table table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.event-registration-table th,
+.event-registration-table td {
+padding: 8px;
+border: 1px solid #ddd;
+text-align: left;
+}
+
+.event-registration-table th {
+background-color: #f2f2f2;
+}
+
+.event-registration-table tbody tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+.event-registration-table tbody tr:hover {
+background-color: #ddd;
+}
